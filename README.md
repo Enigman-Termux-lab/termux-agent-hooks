@@ -31,8 +31,8 @@
 
 ## 🔗 Связанные проекты
 
-* 🔄 **[Enigman-Termux-lab/lab-auto-updater](https://github.com/Enigman-Termux-lab/lab-auto-updater)** — безопасное автоматическое обновление пакетов Termux, Node.js и CLI-агентов по стандартам `termux-fix-path`.
-* 🔔 **[Enigman-Termux-lab/lab-agent-notify](https://github.com/Enigman-Termux-lab/lab-agent-notify)** — специализированный модуль push-уведомлений и тактильного отклика.
+* 🔄 **[Enigman-Termux-lab/termux-auto-updater](https://github.com/Enigman-Termux-lab/termux-auto-updater)** — безопасное автоматическое обновление пакетов Termux, Node.js и CLI-агентов по стандартам `termux-fix-path`.
+* 🔔 **[Enigman-Termux-lab/termux-agent-notify](https://github.com/Enigman-Termux-lab/termux-agent-notify)** — специализированный модуль push-уведомлений и тактильного отклика.
 
 ---
 
