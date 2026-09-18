@@ -1,0 +1,35 @@
+{
+  "termux-agent-hooks": {
+    "PreInvocation": [
+      {
+        "type": "command",
+        "command": "bash $HOME/.config/termux-agent-hooks/scripts/hook-timer-start.sh",
+        "timeout": 5
+      },
+      {
+        "type": "command",
+        "command": "python3 $HOME/.config/termux-agent-hooks/scripts/hook-daily-updater.py",
+        "timeout": 10
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "run_command",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash $HOME/.config/termux-agent-hooks/scripts/hook-biometric-gate.sh",
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "type": "command",
+        "command": "bash $HOME/.config/termux-agent-hooks/scripts/hook-notify-stop.sh",
+        "timeout": 10
+      }
+    ]
+  }
+}

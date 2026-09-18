@@ -1,0 +1,25 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash $HOME/.config/termux-agent-hooks/scripts/hook-biometric-gate.sh"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash $HOME/.config/termux-agent-hooks/scripts/hook-notify-stop.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
